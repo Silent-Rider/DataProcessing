@@ -143,23 +143,17 @@ def plot_coordinates(result, origin=1.0):
 def print_results(result, i):
     print("Шаг:", result["t"][i])
 
-    print("\nКоординаты:")
-    print(result["coordinates"][:, i])
+    print("Координаты: ", result["coordinates"][:, i])
 
-    print("\nИзмерения — расстояния до ориентира:")
-    print(result["measurements"][:, i])
+    print("Измерения — расстояния до ориентира: ", result["measurements"][:, i])
 
-    print("\nВеса частиц 2–5:")
-    print(result["weights"][:, i])
+    print("Веса частиц 2–5: ", result["weights"][:, i])
 
-    print("\nНормализованные веса частиц 2–5:")
-    print(result["normalized_weights"][:, i])
+    print("Нормализованные веса частиц 2–5: ", result["normalized_weights"][:, i])
 
-    print("\nВероятности пережить отсев:")
-    print(result["survival_probabilities"][:, i])
+    print("Вероятности пережить отсев: ", result["survival_probabilities"][:, i])
 
-    print("\nВыжили ли частицы при пороге 0.3:")
-    print(result["survived"][:, i])
+    print("Выжили ли частицы при пороге 0.3: ", result["survived"][:, i])
     print("-------------------------------------\n")
 
 
